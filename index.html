@@ -22,13 +22,41 @@
         input, select, textarea, button {
             font-size: 18px;
         }
+        .menu-btn {
+    font-size: 28px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    background: #222;
+    width: 200px;
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid #555;
+}
     </style>
+
 </head>
 
   <body>
-      <a href="index.html">Not Your Home</a>
-      <br><br>
-      <a href="about.html"> About</a><br><br>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div id="menu" class="menu">
+    <a href="index.html">Not Your Home</a>
+    <a href="about.html">About</a>
+    <a href="admissions.html">Not Available</a>
+    <a href="campus.html">Not Available</a>
+    <a href="contact.html"> Also Not Contact</a>
+</div>
+<br><br>
       <form>
          <b> Name:</b><input type="text">
           <br><br>
@@ -65,5 +93,16 @@
 
 <input type="Submit" value="Save Your Shit">
       </form>
+      <script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
   </body>
 </html>
