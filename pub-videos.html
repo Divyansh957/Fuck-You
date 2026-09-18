@@ -22,15 +22,11 @@
             color: #111;
         }
 
-
-        /* HEADER */
-
         header {
             width: 100%;
             padding: 18px 25px;
             background: #111;
             color: white;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -46,51 +42,35 @@
             color: #111;
             border: none;
             border-radius: 8px;
-
             font-size: 25px;
             padding: 5px 12px;
-
             cursor: pointer;
         }
 
-
-        /* MENU */
-
         .menu {
             display: none;
-
             position: absolute;
             right: 20px;
             top: 70px;
-
             background: #111;
             width: 190px;
-
             border-radius: 10px;
             overflow: hidden;
-
             z-index: 10;
         }
 
         .menu a {
             display: block;
-
             color: white;
             text-decoration: none;
-
             padding: 15px;
-
             border-bottom: 1px solid #444;
-
             font-size: 18px;
         }
 
         .menu a:hover {
             background: #333;
         }
-
-
-        /* TITLE */
 
         .title {
             text-align: center;
@@ -104,111 +84,46 @@
 
         .title p {
             font-size: 18px;
-            margin: 0;
         }
-
-
-        /* VIDEO GALLERY */
 
         .video-gallery {
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 18px;
-
             padding: 25px;
-
             max-width: 850px;
-
             margin: auto;
         }
 
-
-        /* VIDEO ITEM */
-
         .video-item {
             background: white;
-
             border-radius: 12px;
-
             overflow: hidden;
-
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
         }
-
-
-        /* VIDEO LINK BOX */
-
-        .video-link {
-            height: 220px;
-
-            background: #111;
-
-            color: white;
-
-            text-decoration: none;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 24px;
-
-            font-weight: bold;
-        }
-
-        .video-link:hover {
-            background: #333;
-        }
-
-
-        /* REAL VIDEO */
 
         .video-item video {
             width: 100%;
-
-            height: 220px;
-
-            object-fit: cover;
-
+            height: 240px;
             display: block;
-
             background: #000;
+            object-fit: cover;
         }
-
-
-        /* CAPTION */
 
         .caption {
             text-align: center;
-
             padding: 10px;
-
             font-size: 16px;
-
             font-weight: bold;
         }
 
-
-        /* FOOTER */
-
         footer {
             background: #111;
-
             color: white;
-
             text-align: center;
-
             padding: 25px;
-
             margin-top: 30px;
         }
-
-
-        /* MOBILE */
 
         @media (max-width: 600px) {
 
@@ -218,16 +133,8 @@
 
             .video-gallery {
                 grid-template-columns: repeat(2, 1fr);
-
                 gap: 12px;
-
                 padding: 12px;
-            }
-
-            .video-link {
-                height: 180px;
-
-                font-size: 18px;
             }
 
             .video-item video {
@@ -235,8 +142,6 @@
             }
 
             .caption {
-                padding: 8px;
-
                 font-size: 14px;
             }
 
@@ -250,11 +155,7 @@
 
 </head>
 
-
 <body>
-
-
-    <!-- HEADER -->
 
     <header>
 
@@ -269,9 +170,6 @@
     </header>
 
 
-
-    <!-- MENU -->
-
     <div id="menu" class="menu">
 
         <a href="index.html">Home</a>
@@ -281,16 +179,12 @@
         <a href="superstars.html">Superstars</a>
 
         <a href="pub-videos.html">Pub Videos</a>
-
-        <a href="collectible-links.html">Collectible Links</a>
+      <a href="collectible-links.html">Collectible Links</a>
 
         <a href="contact.html">Contact Us</a>
 
     </div>
 
-
-
-    <!-- TITLE -->
 
     <section class="title">
 
@@ -301,9 +195,6 @@
     </section>
 
 
-
-    <!-- VIDEO GALLERY -->
-
     <section class="video-gallery">
 
 
@@ -311,14 +202,13 @@
 
         <div class="video-item">
 
-            <a
-                class="video-link"
-                href="https://nvms9.cdn.privatehost.com/hls/contents/videos/773000/773723/773723,_360p.mp4,.mp4,_720p.mp4,?&lra=2500k&c=9&exp_time=1789761690&tag=perfectgirls.xxx&sign=1922ae2c4d5d490d9ae80bc4984e2e6d"
-                target="_blank"
-                rel="noopener"
-            >
-                ▶ Video 01
-            </a>
+            <video controls playsinline>
+
+                <source src="https://nvms9.cdn.privatehost.com/hls/contents/videos/773000/773723/773723,_360p.mp4,.mp4,_720p.mp4,?&lra=2500k&c=9&exp_time=1789761690&tag=perfectgirls.xxx&sign=1922ae2c4d5d490d9ae80bc4984e2e6d" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
 
             <div class="caption">
                 Video 01
@@ -327,19 +217,17 @@
         </div>
 
 
-
         <!-- VIDEO 2 -->
 
         <div class="video-item">
 
-            <a
-                class="video-link"
-                href="https://xhamster43.desi/videos/fucking-my-big-tit-best-friend-friendship-is-over-xhcxZJj"
-                target="_blank"
-                rel="noopener"
-            >
-                ▶ Video 02
-            </a>
+            <video controls playsinline>
+
+                <source src="video2.mp4" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
 
             <div class="caption">
                 Video 02
@@ -348,19 +236,17 @@
         </div>
 
 
-
         <!-- VIDEO 3 -->
 
         <div class="video-item">
 
-            <a
-                class="video-link"
-                href="https://xhamster46.desi/videos/fucking-my-big-tit-best-friend-friendship-is-over-xhcxZJj"
-                target="_blank"
-                rel="noopener"
-            >
-                ▶ Video 03
-            </a>
+            <video controls playsinline>
+
+                <source src="video3.mp4" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
 
             <div class="caption">
                 Video 03
@@ -369,14 +255,13 @@
         </div>
 
 
-
         <!-- VIDEO 4 -->
 
         <div class="video-item">
 
-            <video controls>
+            <video controls playsinline>
 
-                <source src="https://www.perfectgirls.xxx/video/773723/" type="video/mp4">
+                <source src="video4.mp4" type="video/mp4">
 
                 Your browser does not support video.
 
@@ -392,18 +277,12 @@
     </section>
 
 
-
-    <!-- FOOTER -->
-
     <footer>
 
         © 2026 Naughty BOYZ
 
     </footer>
 
-
-
-    <!-- JAVASCRIPT -->
 
     <script>
 
@@ -424,7 +303,6 @@
         }
 
     </script>
-
 
 </body>
 
