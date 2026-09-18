@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pub Videos</title>
+
+    <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arquitecta', sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            padding: 18px 25px;
+            background: #111;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .menu-btn {
+            background: white;
+            color: #111;
+            border: none;
+            border-radius: 8px;
+
+            font-size: 25px;
+            padding: 5px 12px;
+
+            cursor: pointer;
+        }
+
+
+        /* MENU */
+
+        .menu {
+            display: none;
+
+            position: absolute;
+            right: 20px;
+            top: 70px;
+
+            background: #111;
+            width: 190px;
+
+            border-radius: 10px;
+            overflow: hidden;
+
+            z-index: 10;
+        }
+
+        .menu a {
+            display: block;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 15px;
+
+            border-bottom: 1px solid #444;
+
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            background: #333;
+        }
+
+
+        /* TITLE */
+
+        .title {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .title h1 {
+            font-size: 42px;
+            margin: 0 0 10px;
+        }
+
+        .title p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+
+        /* VIDEO GALLERY */
+
+        .video-gallery {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+
+            padding: 25px;
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        /* VIDEO ITEM */
+
+        .video-item {
+            background: white;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* VIDEO LINK BOX */
+
+        .video-link {
+            height: 220px;
+
+            background: #111;
+
+            color: white;
+
+            text-decoration: none;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 24px;
+
+            font-weight: bold;
+        }
+
+        .video-link:hover {
+            background: #333;
+        }
+
+
+        /* REAL VIDEO */
+
+        .video-item video {
+            width: 100%;
+
+            height: 220px;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #000;
+        }
+
+
+        /* CAPTION */
+
+        .caption {
+            text-align: center;
+
+            padding: 10px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 30px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .video-gallery {
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 12px;
+
+                padding: 12px;
+            }
+
+            .video-link {
+                height: 180px;
+
+                font-size: 18px;
+            }
+
+            .video-item video {
+                height: 180px;
+            }
+
+            .caption {
+                padding: 8px;
+
+                font-size: 14px;
+            }
+
+            .title h1 {
+                font-size: 35px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Welcome To Naughty BOYZ
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- MENU -->
+
+    <div id="menu" class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="superstars.html">Superstars</a>
+
+        <a href="pub-videos.html">Pub Videos</a>
+
+        <a href="collectible-links.html">Collectible Links</a>
+
+        <a href="contact.html">Contact Us</a>
+
+    </div>
+
+
+
+    <!-- TITLE -->
+
+    <section class="title">
+
+        <h1>Pub Videos</h1>
+
+        <p>Watch the videos below</p>
+
+    </section>
+
+
+
+    <!-- VIDEO GALLERY -->
+
+    <section class="video-gallery">
+
+
+        <!-- VIDEO 1 -->
+
+        <div class="video-item">
+
+            <a
+                class="video-link"
+                href="https://anysex.com/video/423294/busty-phat-assed-bbw-natasha-nice-drives-her-stepson-crazy-with-her-curvy-shapes/"
+                target="_blank"
+                rel="noopener"
+            >
+                ▶ Video 01
+            </a>
+
+            <div class="caption">
+                Video 01
+            </div>
+
+        </div>
+
+
+
+        <!-- VIDEO 2 -->
+
+        <div class="video-item">
+
+            <a
+                class="video-link"
+                href="https://xhamster43.desi/videos/fucking-my-big-tit-best-friend-friendship-is-over-xhcxZJj"
+                target="_blank"
+                rel="noopener"
+            >
+                ▶ Video 02
+            </a>
+
+            <div class="caption">
+                Video 02
+            </div>
+
+        </div>
+
+
+
+        <!-- VIDEO 3 -->
+
+        <div class="video-item">
+
+            <a
+                class="video-link"
+                href="https://xhamster46.desi/videos/fucking-my-big-tit-best-friend-friendship-is-over-xhcxZJj"
+                target="_blank"
+                rel="noopener"
+            >
+                ▶ Video 03
+            </a>
+
+            <div class="caption">
+                Video 03
+            </div>
+
+        </div>
+
+
+
+        <!-- VIDEO 4 -->
+
+        <div class="video-item">
+
+            <video controls>
+
+                <source src="https://www.perfectgirls.xxx/video/773723/" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+            <div class="caption">
+                Video 04
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Naughty BOYZ
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function toggleMenu() {
+
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
