@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collectible Links</title>
+
+    <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arquitecta', sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            padding: 18px 25px;
+            background: #111;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .menu-btn {
+            background: white;
+            color: #111;
+            border: none;
+            border-radius: 8px;
+
+            font-size: 25px;
+            padding: 5px 12px;
+
+            cursor: pointer;
+        }
+
+
+        /* MENU */
+
+        .menu {
+            display: none;
+
+            position: absolute;
+            right: 20px;
+            top: 70px;
+
+            background: #111;
+            width: 190px;
+
+            border-radius: 10px;
+            overflow: hidden;
+
+            z-index: 10;
+        }
+
+        .menu a {
+            display: block;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 15px;
+
+            border-bottom: 1px solid #444;
+
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            background: #333;
+        }
+
+
+        /* TITLE */
+
+        .title {
+            text-align: center;
+            padding: 45px 20px 25px;
+        }
+
+        .title h1 {
+            font-size: 42px;
+            margin: 0 0 10px;
+        }
+
+        .title p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+
+        /* LINKS */
+
+        .links-container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .link-box {
+            background: white;
+
+            margin-bottom: 15px;
+
+            padding: 18px 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 15px;
+        }
+
+        .link-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .open-link {
+            background: #111;
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 18px;
+
+            border-radius: 7px;
+
+            font-size: 15px;
+
+            white-space: nowrap;
+        }
+
+        .open-link:hover {
+            background: #444;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 30px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .title h1 {
+                font-size: 34px;
+            }
+
+            .links-container {
+                padding: 12px;
+            }
+
+            .link-box {
+                padding: 15px;
+            }
+
+            .link-name {
+                font-size: 16px;
+            }
+
+            .open-link {
+                padding: 9px 13px;
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Welcome To Naughty BOYZ
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- MENU -->
+
+    <div id="menu" class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="superstars.html">Superstars</a>
+
+        <a href="pub-videos.html">Pub Videos</a>
+
+        <a href="collectible-links.html">Collectible Links</a>
+
+        <a href="contact.html">Contact Us</a>
+
+    </div>
+
+
+
+    <!-- TITLE -->
+
+    <section class="title">
+
+        <h1>Collectible Links</h1>
+
+        <p>Useful links collected here</p>
+
+    </section>
+
+
+
+    <!-- LINKS -->
+
+    <section class="links-container">
+
+
+        <!-- LINK 1 -->
+
+        <div class="link-box">
+
+            <div class="link-name">
+               PornHub
+            </div>
+
+            <a
+                class="open-link"
+                href="https://www.pornhub.org/categories"
+                target="_blank"
+                rel="noopener">
+                Open
+            </a>
+
+        </div>
+
+
+        <!-- LINK 2 -->
+
+        <div class="link-box">
+
+            <div class="link-name">
+               XHamster
+            </div>
+
+            <a
+                class="open-link"
+                href="https://xhamster46.desi/"
+                target="_blank"
+                rel="noopener">
+                Open
+            </a>
+
+        </div>
+
+
+        <!-- LINK 3 -->
+
+        <div class="link-box">
+
+            <div class="link-name">
+                XVideos
+            </div>
+
+            <a
+                class="open-link"
+                href="https://www.videoxx.com/"
+                target="_blank"
+                rel="noopener">
+                Open
+            </a>
+
+        </div>
+
+
+        <!-- LINK 4 -->
+
+        <div class="link-box">
+
+            <div class="link-name">
+               Naughty America            </div>
+
+            <a
+                class="open-link"
+                href="https://www.naughtyamerica.com/"
+                target="_blank"
+                rel="noopener">
+                Open
+            </a>
+
+        </div>
+
+
+        <!-- LINK 5 -->
+
+        <div class="link-box">
+
+            <div class="link-name">
+                Brazzers
+            </div>
+
+            <a
+                class="open-link"
+                href="https://www.brazzers.com/"
+                target="_blank"
+                rel="noopener">
+                Open
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Naughty BOYZ
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function toggleMenu() {
+
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
