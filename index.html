@@ -1,111 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>Fuck You</title>
 
-    <style>
-        body {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    padding: 15px;
-}
+    <link rel="stylesheet" href="styles.css">
 
-        h1 {
-            font-size: 32px;
-        }
-
-        h2 {
-            font-size: 26px;
-        }
-
-        input, select, textarea, button {
-            font-size: 18px;
-        }
-        .menu-btn {
-    font-size: 28px;
-    padding: 5px 12px;
-    cursor: pointer;
-}
-
-.menu {
-    display: none;
-    background: #222;
-    width: 200px;
-    padding: 10px;
-}
-
-.menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border-bottom: 1px solid #555;
-    font-family: Georgia, serif;
-}
-    </style>
-
+    <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
 </head>
 
-  <body>
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<body>
 
-<div id="menu" class="menu">
-    <a href="index.html">Not Your Home</a>
-    <a href="about.html">About</a>
-    <a href="admissions.html">Not Available</a>
-    <a href="campus.html">Not Available</a>
-    <a href="contact.html"> Also Not Contact</a>
-</div>
-<br><br>
-      <form action="https://formspree.io/f/mljdrqav" method="POST" enctype="multipart/form-data">
-         <b> Name:</b><input type="text" name="name">
-          <br><br>
-          
-         <b> Hobbies:</b><br>
-<input type="checkbox" name="hobbies" value="Watching Porn"> Watching Porn<br>
-<input type="checkbox" name="hobbies" value="Night time Hornpub On"> Night time Hornpub On<br>
-<input type="checkbox" name="hobbies" value="Imagine hot girls during Sleeping"> Imagine hot girls during Sleeping<br>
-<input type="checkbox" name="hobbies" value="Looking at girls with dirty eyes"> Looking at girls with dirty eyes<br><br>
-          
-          <b>Gender / Sex:</b>
-<input type="radio" name="gender" value="Lesbian"> Lesbian
-<input type="radio" name="gender" value="Gay"> Gay
-<input type="radio" name="gender" value="WoMen"> WoMen
-<input type="radio" name="gender" value="Genuine Men"> Genuine Men<br><br>
-    
-   <b> Enter Your Fucking Password:</b><input type="password">
-    <br><br>
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            Welcome To Naughty BOYZ
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
 
 
-<b><i>Upload Your Face ( Thobda):</i></b>
-<input type="file" name="face" accept="image/*">
-<br><br>
+    <!-- MENU -->
+    <div id="menu" class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+    </div>
 
 
-<b>Select Your Way to Home:</b> <select name="state">
-    <option>MP</option>
-    <option>UP</option>
-    <option>Rajasthan</option>
-</select>
-<br><br>
+    <!-- FRONT PAGE -->
+    <section class="hero">
 
-<b>Comment My Page:</b>
-<textarea name="comment" rows="6" cols="40"></textarea>
-<br><br>
+        <h1>Welcome BOYZ</h1>
 
-<input type="Submit" value="Save Your Shit">
-      </form>
-      <script>
-function toggleMenu() {
-    var menu = document.getElementById("menu");
+        <p>
+            Welcome to my website.
+           I am here to come create my project and check my html codes but atlast because of my friends what i actually made. 
+           Check it out BOYZ</p>
 
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
-}
-</script>
-  </body>
+
+        <div class="buttons">
+
+            <a href="about.html" class="btn">
+                Explore
+            </a>
+
+            <a href="about.html" class="btn btn-light">
+                About Us
+            </a>
+
+        </div>
+
+
+        <!-- YOUR IMAGE -->
+        <img
+            src="https://uploads.onecompiler.io/453eqymap/1789737237355/1000295505.jpg"
+            alt="Welcome Image"
+        >
+
+    </section>
+
+
+    <!-- WELCOME -->
+    <section class="section">
+
+        <h2>Welcome</h2>
+
+        <p>
+            Explore the website and check out the
+            About page to know more about this project.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 Fuck You. All Rights Reserved.
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
