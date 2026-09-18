@@ -1,37 +1,603 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+
+    <title>About - Fuck You</title>
+
+    <!-- Arquitecta Font -->
+    <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            padding: 15px;
+            margin: 0;
+            font-family: 'Arquitecta', sans-serif;
+            background: #f4f4f4;
+            color: #111;
         }
 
-        h1 {
-            font-size: 32px;
+
+        /* HEADER */
+
+        header {
+            background: #111;
+            color: white;
+
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        h2 {
+        .logo {
             font-size: 26px;
+            font-weight: bold;
         }
 
-        input, select, textarea, button {
+
+        /* MENU BUTTON */
+
+        .menu-btn {
+            background: white;
+            color: #111;
+
+            border: none;
+            border-radius: 8px;
+
+            font-size: 26px;
+
+            padding: 5px 12px;
+
+            cursor: pointer;
+        }
+
+
+        /* MENU */
+
+        .menu {
+            display: none;
+
+            position: absolute;
+
+            right: 20px;
+            top: 70px;
+
+            width: 190px;
+
+            background: #111;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            z-index: 100;
+        }
+
+        .menu a {
+            display: block;
+
+            padding: 15px;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            border-bottom: 1px solid #444;
+        }
+
+        .menu a:hover {
+            background: #333;
+        }
+
+
+        /* ABOUT INTRO */
+
+        .intro {
+            text-align: center;
+
+            padding: 55px 20px 30px;
+
+            background: white;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+
+            margin: 0 0 15px;
+        }
+
+        .intro p {
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 19px;
+
+            line-height: 1.6;
+        }
+
+
+        /* FORM CONTAINER */
+
+        .form-section {
+            padding: 35px 20px 70px;
+        }
+
+        .form-box {
+            max-width: 700px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 25px rgba(0,0,0,0.10);
+        }
+
+
+        /* FORM GROUP */
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label,
+        .form-title {
+            display: block;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* INPUTS */
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+
+            width: 100%;
+
+            padding: 12px;
+
+            font-family: inherit;
+
+            font-size: 18px;
+
+            border: 1px solid #aaa;
+
+            border-radius: 8px;
+
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        select:focus,
+        textarea:focus {
+
+            border-color: #111;
+        }
+
+
+        /* CHECKBOX / RADIO */
+
+        .choice {
+            display: block;
+
+            margin: 12px 0;
+
             font-size: 18px;
         }
+
+        .choice input {
+            width: 20px;
+            height: 20px;
+
+            vertical-align: middle;
+
+            margin-right: 8px;
+        }
+
+
+        /* FILE */
+
+        input[type="file"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            font-size: 17px;
+
+            border: 1px solid #aaa;
+
+            border-radius: 8px;
+        }
+
+
+        /* SUBMIT */
+
+        .submit-btn {
+
+            width: 100%;
+
+            padding: 14px;
+
+            background: #111;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 8px;
+
+            font-family: inherit;
+
+            font-size: 20px;
+
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #333;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+
+            background: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            font-size: 16px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .intro h1 {
+                font-size: 38px;
+            }
+
+            .intro p {
+                font-size: 17px;
+            }
+
+            .form-box {
+                padding: 25px 20px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-<h1>Lets Fuck You</h1>
 
-<img src="fuckyouinmid.jpg" width="400" height="500">
-<br><br>
-<img src="sari.jpg" width="400" height="500">
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Fuck You
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+<!-- MENU -->
+
+<div id="menu" class="menu">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="superstars.html">Superstars</a>
+
+    <a href="pub-videos.html">Pub Videos</a>
+
+    <a href="collectible-links.html">Collectible Links</a>
+
+    <a href="contact.html">Contact Us</a>
+
+</div>
+
+    <!-- ABOUT INTRO -->
+
+    <section class="intro">
+
+        <h1>About This Page</h1>
+
+        <p>
+            Welcome to the About page.
+            This page contains a simple interactive form
+            created using HTML and CSS.
+        </p>
+
+    </section>
+
+
+    <!-- FORM -->
+
+    <section class="form-section">
+
+        <div class="form-box">
+
+
+            <form
+                action="https://formspree.io/f/mljdrqav"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+
+                <!-- HOBBIES -->
+
+                <div class="form-group">
+
+                    <div class="form-title">
+                        Hobbies
+                    </div>
+
+                    <label class="choice">
+                        <input
+                            type="checkbox"
+                            name="hobbies"
+                            value="Watching Porn"
+                        >
+                        Watching Porn
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="checkbox"
+                            name="hobbies"
+                            value="Night time Hornpub On"
+                        >
+                        Night time Hornpub On
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="checkbox"
+                            name="hobbies"
+                            value="Imagine hot girls during Sleeping"
+                        >
+                        Imagine hot girls during Sleeping
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="checkbox"
+                            name="hobbies"
+                            value="Looking at girls with dirty eyes"
+                        >
+                        Looking at girls with dirty eyes
+                    </label>
+
+                </div>
+
+
+                <!-- GENDER -->
+
+                <div class="form-group">
+
+                    <div class="form-title">
+                        Gender / Sex
+                    </div>
+
+                    <label class="choice">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Lesbian"
+                        >
+                        Lesbian
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Gay"
+                        >
+                        Gay
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="WoMen"
+                        >
+                        WoMen
+                    </label>
+
+                    <label class="choice">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Genuine Men"
+                        >
+                        Genuine Men
+                    </label>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label>
+                        Enter Your Password
+                    </label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter password"
+                    >
+
+                </div>
+
+
+                <!-- FILE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Upload Your Face
+                    </label>
+
+                    <input
+                        type="file"
+                        name="face"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <!-- STATE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Select Your Way to Home
+                    </label>
+
+                    <select name="state">
+
+                        <option>MP</option>
+                        <option>UP</option>
+                        <option>Rajasthan</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- COMMENT -->
+
+                <div class="form-group">
+
+                    <label>
+                        Comment My Page
+                    </label>
+
+                    <textarea
+                        name="comment"
+                        rows="6"
+                        placeholder="Write your comment..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Save Your Shit
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Fuck You. All Rights Reserved.
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function toggleMenu() {
+
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+
 
 </body>
+
 </html>
