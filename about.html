@@ -5,9 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About - Fuck You</title>
+    <title>About | Naughty BOYZ</title>
 
-    <!-- Arquitecta Font -->
     <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
 
     <style>
@@ -19,18 +18,17 @@
         body {
             margin: 0;
             font-family: 'Arquitecta', sans-serif;
-            background: #f4f4f4;
+            background: #f5f5f5;
             color: #111;
         }
-
 
         /* HEADER */
 
         header {
+            width: 100%;
+            padding: 18px 25px;
             background: #111;
             color: white;
-
-            padding: 18px 25px;
 
             display: flex;
             align-items: center;
@@ -42,23 +40,15 @@
             font-weight: bold;
         }
 
-
-        /* MENU BUTTON */
-
         .menu-btn {
             background: white;
             color: #111;
-
             border: none;
             border-radius: 8px;
-
-            font-size: 26px;
-
+            font-size: 25px;
             padding: 5px 12px;
-
             cursor: pointer;
         }
-
 
         /* MENU */
 
@@ -66,16 +56,13 @@
             display: none;
 
             position: absolute;
-
             right: 20px;
             top: 70px;
 
+            background: #111;
             width: 190px;
 
-            background: #111;
-
             border-radius: 10px;
-
             overflow: hidden;
 
             z-index: 100;
@@ -84,189 +71,176 @@
         .menu a {
             display: block;
 
-            padding: 15px;
-
             color: white;
-
             text-decoration: none;
 
-            font-size: 18px;
+            padding: 15px;
 
             border-bottom: 1px solid #444;
+
+            font-size: 18px;
         }
 
         .menu a:hover {
             background: #333;
         }
 
+        /* ABOUT */
 
-        /* ABOUT INTRO */
+        .about {
+            background: white;
+            padding: 70px 20px 90px;
+        }
 
-        .intro {
+        .about-container {
+            max-width: 900px;
+            margin: auto;
             text-align: center;
-
-            padding: 55px 20px 30px;
-
-            background: white;
         }
 
-        .intro h1 {
-            font-size: 48px;
-
-            margin: 0 0 15px;
+        .about-container h1 {
+            font-size: 58px;
+            margin: 0 0 18px;
         }
 
-        .intro p {
-            max-width: 650px;
+        .subtitle {
+            max-width: 720px;
+            margin: 0 auto 45px;
 
-            margin: auto;
-
-            font-size: 19px;
-
+            font-size: 21px;
             line-height: 1.6;
+
+            color: #555;
         }
 
+        /* IMAGE */
 
-        /* FORM CONTAINER */
+        .about-image {
+            width: 100%;
+            max-width: 850px;
+            height: 360px;
 
-        .form-section {
-            padding: 35px 20px 70px;
-        }
+            object-fit: cover;
 
-        .form-box {
-            max-width: 700px;
-
-            margin: auto;
-
-            background: white;
-
-            padding: 35px;
+            display: block;
+            margin: 0 auto 55px;
 
             border-radius: 15px;
-
-            box-shadow: 0 5px 25px rgba(0,0,0,0.10);
         }
 
+        /* DETAILS */
 
-        /* FORM GROUP */
-
-        .form-group {
-            margin-bottom: 25px;
+        .details {
+            max-width: 720px;
+            margin: auto;
         }
 
-        label,
-        .form-title {
-            display: block;
-
-            font-size: 20px;
-
-            font-weight: bold;
-
-            margin-bottom: 10px;
+        .details h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
         }
 
-
-        /* INPUTS */
-
-        input[type="text"],
-        input[type="password"],
-        select,
-        textarea {
-
-            width: 100%;
-
-            padding: 12px;
-
-            font-family: inherit;
-
-            font-size: 18px;
-
-            border: 1px solid #aaa;
-
-            border-radius: 8px;
-
-            outline: none;
+        .details p {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 24px;
         }
 
-        input[type="text"]:focus,
-        input[type="password"]:focus,
-        select:focus,
-        textarea:focus {
+        /* FEATURES */
 
-            border-color: #111;
+        .features {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+
+            margin-top: 45px;
         }
 
+        .feature {
+            background: #f5f5f5;
 
-        /* CHECKBOX / RADIO */
+            padding: 28px 20px;
 
-        .choice {
-            display: block;
-
-            margin: 12px 0;
-
-            font-size: 18px;
+            border-radius: 12px;
         }
 
-        .choice input {
-            width: 20px;
-            height: 20px;
-
-            vertical-align: middle;
-
-            margin-right: 8px;
+        .feature h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
         }
 
+        .feature p {
+            font-size: 16px;
+            line-height: 1.6;
 
-        /* FILE */
+            color: #666;
 
-        input[type="file"] {
-
-            width: 100%;
-
-            padding: 10px;
-
-            font-size: 17px;
-
-            border: 1px solid #aaa;
-
-            border-radius: 8px;
+            margin: 0;
         }
 
+        /* DIVIDER */
 
-        /* SUBMIT */
-
-        .submit-btn {
-
-            width: 100%;
-
-            padding: 14px;
+        .line {
+            width: 70px;
+            height: 3px;
 
             background: #111;
 
+            margin: 40px auto;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 45px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: #111;
             color: white;
 
-            border: none;
+            text-decoration: none;
 
             border-radius: 8px;
 
-            font-family: inherit;
-
-            font-size: 20px;
-
-            cursor: pointer;
+            font-size: 18px;
         }
 
-        .submit-btn:hover {
-            background: #333;
+        .btn:hover {
+            background: #444;
         }
 
+        .btn-light {
+            background: white;
+            color: #111;
+
+            border: 2px solid #111;
+        }
+
+        .btn-light:hover {
+            background: #111;
+            color: white;
+        }
 
         /* FOOTER */
 
         footer {
-
             background: #111;
-
             color: white;
 
             text-align: center;
@@ -276,7 +250,6 @@
             font-size: 16px;
         }
 
-
         /* MOBILE */
 
         @media (max-width: 600px) {
@@ -285,16 +258,33 @@
                 font-size: 22px;
             }
 
-            .intro h1 {
-                font-size: 38px;
+            .about {
+                padding: 60px 20px 70px;
             }
 
-            .intro p {
+            .about-container h1 {
+                font-size: 43px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .about-image {
+                height: 230px;
+                border-radius: 12px;
+            }
+
+            .details h2 {
+                font-size: 30px;
+            }
+
+            .details p {
                 font-size: 17px;
             }
 
-            .form-box {
-                padding: 25px 20px;
+            .features {
+                grid-template-columns: 1fr;
             }
 
         }
@@ -312,7 +302,7 @@
     <header>
 
         <div class="logo">
-            Fuck You
+            Welcome To Naughty BOYZ
         </div>
 
         <button class="menu-btn" onclick="toggleMenu()">
@@ -322,244 +312,190 @@
     </header>
 
 
-<!-- MENU -->
+    <!-- MENU -->
 
-<div id="menu" class="menu">
+    <div id="menu" class="menu">
 
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-    <a href="about.html">About</a>
+        <a href="about.html">About</a>
 
-    <a href="superstars.html">Superstars</a>
+        <a href="superstars.html">Superstars</a>
 
-    <a href="pub-videos.html">Pub Videos</a>
+        <a href="pub-videos.html">Pub Videos</a>
 
-    <a href="collectible-links.html">Collectible Links</a>
+        <a href="collectible-links.html">Collectible Links</a>
 
-    <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
 
-</div>
-
-    <!-- ABOUT INTRO -->
-
-    <section class="intro">
-
-        <h1>About This Page</h1>
-
-        <p>
-            Welcome to the About page.
-            This page contains a simple interactive form
-            created using HTML and CSS.
-        </p>
-
-    </section>
+    </div>
 
 
-    <!-- FORM -->
+    <!-- ABOUT -->
 
-    <section class="form-section">
+    <section class="about">
 
-        <div class="form-box">
+        <div class="about-container">
 
 
-            <form
-                action="https://formspree.io/f/mljdrqav"
-                method="POST"
-                enctype="multipart/form-data"
+            <h1>
+                About Us
+            </h1>
+
+
+            <p class="subtitle">
+                Welcome to Naughty BOYZ — a place for
+                entertainment, interesting content,
+                collections and a little bit of attitude.
+            </p>
+
+
+            <!-- EDGY PROFESSIONAL IMAGE -->
+
+            <img
+                class="about-image"
+                src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=85"
+                alt="Naughty BOYZ"
             >
 
 
-                <!-- NAME -->
-
-                <div class="form-group">
-
-                    <label>
-                        Name
-                    </label>
-
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Enter your name"
-                    >
-
-                </div>
+            <div class="line"></div>
 
 
-                <!-- HOBBIES -->
+            <!-- WEBSITE DETAILS -->
 
-                <div class="form-group">
+            <div class="details">
 
-                    <div class="form-title">
-                        Hobbies
+                <h2>
+                    About Naughty BOYZ
+                </h2>
+
+
+                <p>
+                    Naughty BOYZ is a personal entertainment
+                    website created as a fun web-development
+                    project. The website combines different
+                    types of content into one simple and
+                    easy-to-use platform.
+                </p>
+
+
+                <p>
+                    The project was originally created while
+                    experimenting with HTML, CSS and JavaScript.
+                    Over time, it developed into a complete
+                    website with multiple sections and its
+                    own visual style.
+                </p>
+
+
+                <p>
+                    From the home page to the gallery,
+                    videos, collectible links and social
+                    contact section, everything is organised
+                    in one place for a simple browsing
+                    experience.
+                </p>
+
+
+                <!-- FEATURES -->
+
+                <div class="features">
+
+
+                    <div class="feature">
+
+                        <h3>
+                            🖼 Superstars
+                        </h3>
+
+                        <p>
+                            Browse the website's image
+                            gallery and explore its collection.
+                        </p>
+
                     </div>
 
-                    <label class="choice">
-                        <input
-                            type="checkbox"
-                            name="hobbies"
-                            value="Watching Porn"
-                        >
-                        Watching Porn
-                    </label>
 
-                    <label class="choice">
-                        <input
-                            type="checkbox"
-                            name="hobbies"
-                            value="Night time Hornpub On"
-                        >
-                        Night time Hornpub On
-                    </label>
+                    <div class="feature">
 
-                    <label class="choice">
-                        <input
-                            type="checkbox"
-                            name="hobbies"
-                            value="Imagine hot girls during Sleeping"
-                        >
-                        Imagine hot girls during Sleeping
-                    </label>
+                        <h3>
+                            ▶ Pub Videos
+                        </h3>
 
-                    <label class="choice">
-                        <input
-                            type="checkbox"
-                            name="hobbies"
-                            value="Looking at girls with dirty eyes"
-                        >
-                        Looking at girls with dirty eyes
-                    </label>
+                        <p>
+                            A dedicated section for video
+                            content added to the website.
+                        </p>
 
-                </div>
-
-
-                <!-- GENDER -->
-
-                <div class="form-group">
-
-                    <div class="form-title">
-                        Gender / Sex
                     </div>
 
-                    <label class="choice">
-                        <input
-                            type="radio"
-                            name="gender"
-                            value="Lesbian"
-                        >
-                        Lesbian
-                    </label>
 
-                    <label class="choice">
-                        <input
-                            type="radio"
-                            name="gender"
-                            value="Gay"
-                        >
-                        Gay
-                    </label>
+                    <div class="feature">
 
-                    <label class="choice">
-                        <input
-                            type="radio"
-                            name="gender"
-                            value="WoMen"
-                        >
-                        WoMen
-                    </label>
+                        <h3>
+                            🔗 Collectible Links
+                        </h3>
 
-                    <label class="choice">
-                        <input
-                            type="radio"
-                            name="gender"
-                            value="Genuine Men"
-                        >
-                        Genuine Men
-                    </label>
+                        <p>
+                            Useful and interesting links
+                            collected together in one place.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <h3>
+                            📱 Contact Us
+                        </h3>
+
+                        <p>
+                            Connect through social platforms
+                            available on the Contact page.
+                        </p>
+
+                    </div>
+
 
                 </div>
 
 
-                <!-- PASSWORD -->
-
-                <div class="form-group">
-
-                    <label>
-                        Enter Your Password
-                    </label>
-
-                    <input
-                        type="password"
-                        placeholder="Enter password"
-                    >
-
-                </div>
+                <div class="line"></div>
 
 
-                <!-- FILE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Upload Your Face
-                    </label>
-
-                    <input
-                        type="file"
-                        name="face"
-                        accept="image/*"
-                    >
-
-                </div>
+                <p>
+                    This website is continuously being
+                    developed and improved with new ideas,
+                    designs and content.
+                </p>
 
 
-                <!-- STATE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Select Your Way to Home
-                    </label>
-
-                    <select name="state">
-
-                        <option>MP</option>
-                        <option>UP</option>
-                        <option>Rajasthan</option>
-
-                    </select>
-
-                </div>
+            </div>
 
 
-                <!-- COMMENT -->
+            <!-- BUTTONS -->
 
-                <div class="form-group">
+            <div class="buttons">
 
-                    <label>
-                        Comment My Page
-                    </label>
-
-                    <textarea
-                        name="comment"
-                        rows="6"
-                        placeholder="Write your comment..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- SUBMIT -->
-
-                <button
-                    type="submit"
-                    class="submit-btn"
+                <a
+                    href="superstars.html"
+                    class="btn"
                 >
-                    Save Your Shit
-                </button>
+                    Explore
+                </a>
 
 
-            </form>
+                <a
+                    href="contact.html"
+                    class="btn btn-light"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
 
         </div>
 
@@ -570,7 +506,7 @@
 
     <footer>
 
-        © 2026 Fuck You. All Rights Reserved.
+        © 2026 Naughty BOYZ
 
     </footer>
 
@@ -581,7 +517,8 @@
 
         function toggleMenu() {
 
-            var menu = document.getElementById("menu");
+            var menu =
+                document.getElementById("menu");
 
             if (menu.style.display === "block") {
 
